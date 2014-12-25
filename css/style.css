@@ -1,0 +1,82 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+body {
+	background: #343e49;
+	font-family: Helvetica;
+}
+
+.contener {
+	width: 1100px;
+	margin: 40px auto;
+}
+.left_block {
+	width: 340px;
+	height: 600px;
+	background: #3499b8;
+	float: left;
+}
+.content {
+	width: 760px;
+	height: 600px;
+	background: #ededed;
+	float: left;
+}
+.content_box {
+	padding: 30px;
+	border-bottom: 1px solid #adb2b7;
+}
+.table_box {
+	width: 698px;
+	height: 100px; 
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	background: #ffffff;
+}
+.table_box_item {
+	width: 668px;
+	padding: 10px 15px;
+	border-bottom: 1px solid #ddd;
+}
+
+.left_block img {
+	margin: 35px auto 20px auto;
+	display: block;
+}
+.left_block h1 {
+	color: #ffffff;
+	font: 26px/18pt Helvetica;
+	text-align: center;
+}
+
+.content h3 {
+	font-size: 18px;
+	font-weight: 200;
+	margin-bottom: 10px;
+	color: #333;
+}
+.content h4 {
+	font-size: 16px;
+	font-weight: 200;
+	margin-bottom: 10px;
+	color: #333;
+}
+
+.content select {
+	width: 600px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	padding: 7px;
+	color: #333;
+}
+.content input[type="checkbox"] {
+	cursor: pointer;
+	float: left;
+	margin-top: 3px;
+	margin-right: 10px;
+}
+.table_box_item p {
+	float: left;
+}
