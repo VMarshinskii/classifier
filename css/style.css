@@ -18,6 +18,11 @@ body {
 	background: #3499b8;
 	float: left;
 }
+aside
+{
+	width: 340px;
+	padding-top: 30px;
+}
 .content {
 	width: 760px;
 	min-height: 2410px;
@@ -41,14 +46,14 @@ body {
 	border-bottom: 1px solid #ddd;
 }
 .table_box_item:hover {
-	background: #eee;
+	background: #F1FCFF;
 }
 .table_box_item:last-child {
 	border: none;
 }
 
 .left_block img {
-	margin: 35px auto 20px auto;
+	margin: 0px auto 20px auto;
 	display: block;
 }
 .left_block h1 {
@@ -100,4 +105,30 @@ body {
 	cursor: pointer;
 	box-shadow: 0 0 5px rgba(0, 0, 0, 0.46);
 	border: 1px solid #1E7792;
+}
+.prilip 
+{
+  position: fixed;
+  z-index: 101;
+}
+.stop 
+{
+  position: relative;
+}
+
+.left_block ul 
+{
+	width: 100%;
+	list-style: none;
+	margin-top: 130px;
+}
+.left_block ul li 
+{
+	width: 100%;
+	padding: 25px 0;
+	text-align: center;
+	text-transform: uppercase;
+	border-bottom: 1px solid #3093B1;
+	color: #ffffff;
+	background: #2383A1;
 }
