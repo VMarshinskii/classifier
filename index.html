@@ -3,8 +3,17 @@
 <head>
 	<title>Классификатор автоматизированных систем</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<link rel="stylesheet" href="css/reveal.css">
+	<script src="js/jquery.min.js" type="text/javascript"></script>
+	<script src="js/jquery.reveal.js" type="text/javascript"></script>
 </head>
 <body>
+	<div id="myModal" class="reveal-modal">
+	     <h1>Modal Title</h1>
+	     <p>Any content could go in here.</p>
+	     <a class="close-reveal-modal">&#215;</a>
+	</div>
 	<div class="contener">
 		<div class="left_block">
 			<aside>
@@ -287,7 +296,7 @@
 					</div>
 				</div>
 
-				<div class="bottom_class">Определить класс защищённости</div>
+				<a href="#" data-reveal-id="myModal" class="bottom_class">Определить класс защищённости</a>
 			</div>
 		</div>
 		<div style="clear:both"></div>
@@ -297,19 +306,28 @@
 <script>
   // document.documentElement.scrollHeight - высота веб-документа;
   // aside.offsetHeight - высота элемента
-var footer = document.querySelector('footer');
-var aside = document.querySelector('aside'),
-t0 = aside.getBoundingClientRect().top - document.documentElement.getBoundingClientRect().top,
-t1 = document.documentElement.scrollHeight - footer.scrollHeight - aside.offsetHeight;
-function asideScroll() {
-  if (window.pageYOffset > t1) {
-    aside.className = 'stop';
-    aside.style.top = t1 - t0 + 'px';
-  } else {
-    aside.className = (t0 < window.pageYOffset ? 'prilip' : '');
-    aside.style.top = '0';
-  }
-}
-window.addEventListener('scroll', asideScroll, false);
+	var footer = document.querySelector('footer');
+	var aside = document.querySelector('aside'),
+	t0 = aside.getBoundingClientRect().top - document.documentElement.getBoundingClientRect().top,
+	t1 = document.documentElement.scrollHeight - footer.scrollHeight - aside.offsetHeight;
+	function asideScroll() {
+	  if (window.pageYOffset > t1) {
+	    aside.className = 'stop';
+	    aside.style.top = t1 - t0 + 'px';
+	  } else {
+	    aside.className = (t0 < window.pageYOffset ? 'prilip' : '');
+	    aside.style.top = '0';
+	  }
+	}
+	window.addEventListener('scroll', asideScroll, false);
+
+	$(document).ready(function(){
+		$('#myModal').reveal({
+		     animation: 'fadeAndPop',                   //fade, fadeAndPop, none
+		     animationspeed: 300,                       //how fast animtions are
+		     closeonbackgroundclick: true,              //if you click background will modal close?
+		     dismissmodalclass: 'close-reveal-modal'    //the class of a button or element that will close an open modal
+		});
+	});
 </script>
 </html>

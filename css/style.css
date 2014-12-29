@@ -106,6 +106,10 @@ aside
 	box-shadow: 0 0 5px rgba(0, 0, 0, 0.46);
 	border: 1px solid #1E7792;
 }
+.bottom_class:hover
+{
+	background: #308AA6;
+}
 .prilip 
 {
   position: fixed;
@@ -131,4 +135,9 @@ aside
 	border-bottom: 1px solid #3093B1;
 	color: #ffffff;
 	background: #2383A1;
+	cursor: pointer;
+}
+.left_block ul li:hover
+{
+	background: #217A96;
 }
